@@ -1,0 +1,264 @@
+*{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    padding: 20px;
+    margin: 20px 30px;
+}
+/*header start*/
+.log{
+    width: 210px;
+    font-size: 14px;
+    font-family: sans-serif, cursive, fantasy;
+    margin: 0px 0px 10px;
+    padding: 0px;
+    float: right;
+    color: #Dfe;
+    
+    clear: both;
+}
+form{
+    width: auto;
+    margin: auto 0px;
+    padding: 0px 0px;
+}
+label{
+    font-size: 14px;
+    text-align: center;
+    color: #420404;
+}
+fieldset{
+   border-color: #d161e2;
+   border-radius: 15px;
+}
+legend{
+    font-family: Arial, cursive;
+    font-size: 15px;
+    border: none #f60 1px;
+    border-radius: 7px;
+    color: #420404;
+}
+
+fieldset input{
+    width: auto;
+    text-align: center;
+}
+.icon img{
+    width: 100px;
+    float: left;
+    border-radius: 50%;
+    position: absolute;
+    animation-name: rolling;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+    animation-iteration-count: 20;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    
+}
+@keyframes rolling{
+   
+   0%,100%  {
+    transform: rotatex(0) rotateY(0) 
+   }
+   25%{
+    transform: rotateX(180deg) rotateY(0)
+   }
+   50%{
+    transform: rotateX(90deg) rotateY(180deg)
+   }
+   75%{
+    transform: rotatez(90deg)
+   }
+}
+.icn{
+   display: inline-flex;
+    margin: 0% 7%;
+    padding: 2%;
+    text-align: left;
+    color: #33337d;
+    font-family: cursive;
+    
+}
+
+
+.top {
+    background-image: url(../img/colored-wallpaper-hd.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    width: auto;
+    background-size: cover;
+    height: auto;
+    width: 75%;
+    height: 150px;
+    text-align: center;
+    padding: 0px ;
+    margin: 20px auto ;
+    border: 4px solid #ddd;
+    border-radius: 10px;
+    clear: both;
+}
+
+
+.top {
+    color:#2200a5;
+    font-family: cursive;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 100;
+    font-size: 18px;
+}
+.header {
+    text-align: center;
+}
+/*header end*/
+/*nav start*/
+
+nav{
+    margin: 40px auto;
+    background-color: #DDD;
+    border-radius: 14px;
+    width: 600px;
+    direction: rtl;
+    
+    
+}
+
+.left ul{
+	display: inline;
+	list-style: none;
+    list-style-type: none;
+    margin: 40px auto;
+    padding: 40px;
+    
+	
+}
+
+.left ul a{
+	text-align: center;
+	display: inline-block;
+    text-decoration: none;
+    margin: auto;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+    opacity: 1;
+    
+}
+
+.left ul a:hover{
+   text-decoration: underline;
+    color:red;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid rgba(208, 215, 226,0.1);
+    opacity: .7;
+    transform: scale(1.3,1.3);
+    /**transform: translatey(10px);**/
+    /*transform: rotateX(60deg);*/
+
+}
+
+.left ul a:active{
+    color: #fff;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+li{
+    letter-spacing:0px;
+    text-align: center;
+    margin: auto;
+    padding: 3px;
+}
+/*nav end*/
+/*main start*/
+main {
+	display: flex;
+    background-color: #955e9e;
+    margin: 10px ;
+    padding: 20px;
+    max-height: 1000px;
+	border-radius: 10px;
+    overflow: auto;
+    width: 70%;
+    box-shadow: 5px 5px rgb(221, 221, 255);
+}
+
+aside{
+    float: left;
+    width: 13%;
+    background: fixed #ddd;
+    padding: 2px;
+    margin:  2px 15px;
+    border: 4px solid hsla(0, 100%, 47%, 0.08);
+    border-radius: 5px;
+    visibility: hidden;
+}
+.aside{
+    list-style: none;
+    text-align: center;
+    margin: 2px auto;
+}
+main{
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+}
+main .containar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 5px;
+    
+}
+
+main div div h3{
+	font-weight: bold;
+	text-align: center;
+}
+main div div img{
+    width: 210px;
+    height: 210px;
+    padding: 10px;
+    margin: 20px;
+    background-color: #ddf;
+    border: 4px solid #ffe;
+    border-radius: 10px;
+    
+}
+main div div:hover{
+    transition: all .5s ease-in-out;
+    transform: scale(1.1);
+}
+
+main a{
+    text-decoration: none;
+    
+}
+
+ main .containar h3:hover{
+  text-decoration: underline;
+  color: #ff3f3f;
+  border-radius: 5px;
+  background-color: #FFf;
+  border-radius: 10px;
+  border-color: #DDD;
+}
+/*main end*/
+/*footer start*/
+footer{
+    text-align: center;
+    font-weight: bold;
+    margin: 25px auto;
+    padding: 0px;
+}
+
+/*footer end*/
